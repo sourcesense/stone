@@ -22,7 +22,7 @@ We suggest you to set maven options with something like this:
 
 export MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 
-== About third-parties directory
+=== About third-parties directory
 
 We had to patch the build process of google-collections library because that is
 a deprecated library, we plan to change the modeshape dependency on it to

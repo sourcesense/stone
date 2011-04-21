@@ -1160,15 +1160,17 @@
                 <artifactId>modeshape-jdbc</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
             <!--
                Collections
             -->
             <dependency>
-                <groupId>com.google.collections</groupId>
-                <artifactId>google-collections</artifactId>
-                <version>1.0-rc3</version>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>r09</version>
                 <scope>compile</scope>
             </dependency>
+
             <!--
             Time and Date
             -->

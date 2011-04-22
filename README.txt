@@ -22,20 +22,6 @@ We suggest you to set maven options with something like this:
 
 export MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 
-=== About third-parties directory
-
-We had to patch the build process of google-collections library because that is
-a deprecated library, we plan to change the modeshape dependency on it to
-it's new version Guava.
-
-The build of the library is not included with the main one, so you need to run
-the build process for these manually.
-
-The library google-collection uses ant; to create the bundle run the
-following command from its directory:
-
-ant osgi
-
 === Installation
 
 After you have successfully built the project, you have to manually install the
@@ -62,7 +48,10 @@ bundles/jcr/com.sourcesense.stone.jcr.base/target/com.sourcesense.stone.jcr.base
 modeshape-stone/modeshape-common/target/modeshape-common-2.4.0.Final-stone-SNAPSHOT.jar
 ~/.m2/repository/net/jcip/com.springsource.net.jcip.annotations/1.0.0/com.springsource.net.jcip.annotations-1.0.0.jar
 stone/modeshape-stone/modeshape-graph/target/modeshape-graph-2.4.0.Final-stone-SNAPSHOT.jar
-third-parties/google-collections-read-only/build/dist/google-collect-snapshot/google-collect-snapshot.jar
+
+Download and install
+http://guava-osgi.googlecode.com/svn/trunk/repository/plugins/com.google.guava_9.0.0.jar
+
 ~/.m2/repository/joda-time/joda-time/1.6.2/joda-time-1.6.2.jar
 stone/modeshape-stone/modeshape-jcr/target/modeshape-jcr-2.4.0.Final-stone-SNAPSHOT.jar
 

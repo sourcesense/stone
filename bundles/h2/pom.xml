@@ -26,11 +26,11 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.sourcesense.stone</groupId>
-    <artifactId>com.sourcesense.stone.external.dependencies</artifactId>
+    <artifactId>com.sourcesense.stone.h2</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
-    <name>Stone :: Apache Sling - ModeShape external dependencies</name>
-    <description>Bundle providing embedded ModeShape and all its dependencies</description>
+    <name>Stone :: Apache Sling - H2 Drivers</name>
+    <description>Bundle providing H2 Drivers as an OSGI bundle</description>
 
     <scm>
         <connection>scm:svn:https://dev.sourcesense.com/repos/dev/stone/trunk/bundles/external-dependencies</connection>
@@ -76,38 +76,13 @@
                     <instructions>
                         <Bundle-Category>sling,jcr,modeshape</Bundle-Category>
                         <Export-Package>
-                            org.hibernate.*; version=3.3.2;-split-package:=merge-last,
-                            org.postgresql.*;
-
-                            org.h2.*,
-                            antlr.*,
-                            javassist.*,
-                            com.mchange.*,
-
-                            javax.persistence.*;-split-package:=merge-last,
-
-                            javax.transaction.*,
-
-                            org.dom4j.*,
+                            org.h2.*
                         </Export-Package>
                         <Private-Package>
-                        </Private-Package>
-                        <Import-Package>
-                            java.util.*,
-                            java.io.*,
-                            java.security.*,
-                            java.net.*,
-                            org.xml.sax.*,
-
-                            org.slf4j,
-                        </Import-Package>
                         <DynamicImport-Package>*</DynamicImport-Package>
 
                         <!-- Embedd some libraries -->
                         <Embed-Transitive>true</Embed-Transitive>
-
-                        <Embed-Dependency>
-                        </Embed-Dependency>
 
                         <_removeheaders>
                             Embed-Dependency,
@@ -165,6 +140,7 @@
     </properties>
 
     <dependencies>
+<!--
         <dependency>
             <groupId>javax.jcr</groupId>
             <artifactId>jcr</artifactId>
@@ -357,7 +333,7 @@
             <artifactId>antlr</artifactId>
             <version>2.7.7</version>
         </dependency>
-
+-->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>

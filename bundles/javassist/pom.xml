@@ -26,11 +26,11 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.sourcesense.stone</groupId>
-    <artifactId>com.sourcesense.stone.external.dependencies</artifactId>
+    <artifactId>com.sourcesense.stone.javassist</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
-    <name>Stone :: Apache Sling - ModeShape external dependencies</name>
-    <description>Bundle providing embedded ModeShape and all its dependencies</description>
+    <name>Stone :: Apache Sling - Javassist</name>
+    <description>Bundle providing Javassist library</description>
 
     <scm>
         <connection>scm:svn:https://dev.sourcesense.com/repos/dev/stone/trunk/bundles/external-dependencies</connection>
@@ -76,30 +76,11 @@
                     <instructions>
                         <Bundle-Category>sling,jcr,modeshape</Bundle-Category>
                         <Export-Package>
-                            org.hibernate.*; version=3.3.2;-split-package:=merge-last,
-                            org.postgresql.*;
-
-                            org.h2.*,
-                            antlr.*,
                             javassist.*,
-                            com.mchange.*,
-
-                            javax.persistence.*;-split-package:=merge-last,
-
-                            javax.transaction.*,
-
-                            org.dom4j.*,
                         </Export-Package>
                         <Private-Package>
                         </Private-Package>
                         <Import-Package>
-                            java.util.*,
-                            java.io.*,
-                            java.security.*,
-                            java.net.*,
-                            org.xml.sax.*,
-
-                            org.slf4j,
                         </Import-Package>
                         <DynamicImport-Package>*</DynamicImport-Package>
 
@@ -165,6 +146,7 @@
     </properties>
 
     <dependencies>
+<!--
         <dependency>
             <groupId>javax.jcr</groupId>
             <artifactId>jcr</artifactId>
@@ -347,11 +329,13 @@
             <artifactId>postgresql</artifactId>
             <version>9.0-801.jdbc4</version>
         </dependency>
+-->
         <dependency>
             <groupId>javassist</groupId>
             <artifactId>javassist</artifactId>
             <version>3.12.1.GA</version>
         </dependency>
+<!--
         <dependency>
             <groupId>antlr</groupId>
             <artifactId>antlr</artifactId>
@@ -363,5 +347,6 @@
             <artifactId>h2</artifactId>
             <version>1.3.152</version>
         </dependency>
+-->
     </dependencies>
 </project>

@@ -36,7 +36,6 @@
     <!-- List modules to be included in the build here ! -->
     <modules>
         <module>bundle-test</module>
-        <module>external-dependencies</module>
         <module>jcr/com.sourcesense.stone.jcr.base</module>
         <module>jcr/modeshape-server</module>
         <module>jaas/jaas-login-registration</module>

@@ -1,3 +1,13 @@
+******************************
+           IMPORTANT
+******************************
+
+The current release is still in a development status, and at the moment it's not
+working as you would expect.
+
+We have two blocking issues at the moment, you can find more information about
+them in the 'Issues' section.
+
 === What's this?
 
 Stone is a project created to test how to replace the embedded JCR Repository in Sling with another

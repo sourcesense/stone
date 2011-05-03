@@ -92,3 +92,21 @@ Run the command:
 jar umf lucene-core-manifest <path_to_jar>/lucene-core-3.2-SNAPSHOT.jar
 
 Now you can install the jar in Sling
+
+=== Licenses
+
+Along the way we came across some libraries the project now depends on.
+For each of them, here you can read its own license:
+
+JCIP Annotations: Creative Commons 2.5
+JCR: Copyright Day
+JBoss ModeShape: LGPL version 2.1 or above
+Apache Jackrabbit: Apache License, Version 2.0
+Apache Lucene: Apache License, Version 2.0
+JBoss Hibernate: LGPL version 2.1 or above
+PostgreSQL Drivers: Copyright (c) 2003-2008, PostgreSQL Global Development Group
+H2 Drivers: MPL 1.1 or EPL 1.0
+Antl: [The BSD License] - Copyright (c) 2010 Terence Parr
+Javassist: Mozilla Public License or LGPL
+Google Collections: Apache License, Version 2.0
+Joda-Time:Apache License, Version 2.0

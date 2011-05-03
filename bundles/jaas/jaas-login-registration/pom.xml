@@ -89,21 +89,10 @@
 
                         <Import-Package>
                             java.util.*,
-<!--
-org.apache.jackrabbit.api,version=2.1.1 from org.apache.jackrabbit.jackrabbit-api (48)
-org.apache.jackrabbit.api.security.user,version=2.1.1 from org.apache.jackrabbit.jackrabbit-api (48)
--->
-                            <!-- Sling and OSGi -->
-<!--
-                            org.apache.sling.*,
-                            org.osgi.*,
--->
 
                             <!-- Logging -->
                             org.slf4j,
-<!--
-                            org.modeshape.*;version=${modeshape.version},
--->
+
                         </Import-Package>
                         <DynamicImport-Package>*</DynamicImport-Package>
 
@@ -147,7 +136,7 @@ org.apache.jackrabbit.api.security.user,version=2.1.1 from org.apache.jackrabbit
                     </execution>
                 </executions>
             </plugin>
-            
+
             <plugin>
                 <groupId>org.ops4j.pax.exam</groupId>
                 <artifactId>maven-paxexam-plugin</artifactId>
@@ -161,7 +150,7 @@ org.apache.jackrabbit.api.security.user,version=2.1.1 from org.apache.jackrabbit
                     </execution>
                 </executions>
             </plugin>
-    
+
         </plugins>
     </build>
 
@@ -207,13 +196,13 @@ org.apache.jackrabbit.api.security.user,version=2.1.1 from org.apache.jackrabbit
             <artifactId>org.apache.felix.webconsole</artifactId>
             <version>3.1.0</version>
         </dependency>
-        
+
         <dependency>
             <groupId>javax.jcr</groupId>
             <artifactId>jcr</artifactId>
             <version>2.0</version>
         </dependency>
-        
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

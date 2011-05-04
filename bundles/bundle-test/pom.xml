@@ -33,9 +33,9 @@
     <description>Bundle providing testing for Stone</description>
 
     <scm>
-        <connection>scm:svn:https://dev.sourcesense.com/repos/dev/stone/trunk/bundles/bundle-test</connection>
-        <developerConnection>scm:svn:https://dev.sourcesense.com/repos/dev/stone/trunk/bundles/bundle-test</developerConnection>
-        <url>https://dev.sourcesense.com/repos/dev/stone/trunk/bundles/bundle-test</url>
+        <connection>scm:git:git://github.com/sourcesense/stone.git</connection>
+        <developerConnection>scm:git@github.com:sourcesense/stone.git</developerConnection>
+        <url>https://github.com/sourcesense/stone</url>
     </scm>
 
     <build>

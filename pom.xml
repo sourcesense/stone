@@ -39,14 +39,14 @@
     </licenses>
 
     <scm>
-        <connection>scm:svn:https://dev.sourcesense.com/repos/dev/stone/trunk/</connection>
-        <developerConnection>scm:svn:https://dev.sourcesense.com/repos/dev/stone/trunk/</developerConnection>
-        <url>https://dev.sourcesense.com/repos/dev/stone/trunk/</url>
+        <connection>scm:git:git://github.com/sourcesense/stone.git</connection>
+        <developerConnection>scm:git@github.com:sourcesense/stone.git</developerConnection>
+        <url>https://github.com/sourcesense/stone</url>
     </scm>
 
     <issueManagement>
-        <system>Pivotal Tracker</system>
-        <url>https://www.pivotaltracker.com/projects/199371</url>
+        <system>GitHub</system>
+        <url>https://github.com/sourcesense/stone/issues</url>
     </issueManagement>
 
     <mailingLists>

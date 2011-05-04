@@ -31,9 +31,9 @@
     <description>Bundle providing support to embed Modeshape Repository instances and publish via RMI and/or JNDI</description>
 
     <scm>
-        <connection>scm:svn:https://dev.sourcesense.com/repos/dev/stone/trunk/bundles/jcr/modeshape-server</connection>
-        <developerConnection>scm:svn:https://dev.sourcesense.com/repos/dev/stone/trunk/bundles/jcr/modeshape-server</developerConnection>
-        <url>https://dev.sourcesense.com/repos/dev/stone/trunk/bundles/jcr/modeshape-server</url>
+        <connection>scm:git:git://github.com/sourcesense/stone.git</connection>
+        <developerConnection>scm:git@github.com:sourcesense/stone.git</developerConnection>
+        <url>https://github.com/sourcesense/stone</url>
     </scm>
 
     <build>
@@ -179,7 +179,7 @@
                                     org.modeshape.common.*;version=${modeshape.version},
                                     org.modeshape.graph.*;version=${modeshape.version},
                                     org.modeshape.jcr.*;version=${modeshape.version},
-                                    
+
                                     com.sourcesense.stone.jcr.base
                                 </Import-Package>
                                 <DynamicImport-Package>*</DynamicImport-Package>

@@ -31,9 +31,9 @@
     <description>This is a module to register a JAAS module and to use it in the Sling / Modeshape integration</description>
 
     <scm>
-        <connection>scm:svn:https://dev.sourcesense.com/repos/dev/stone/trunk/bundles/jaas/jaas-login-registration</connection>
-        <developerConnection>scm:svn:https://dev.sourcesense.com/repos/dev/stone/trunk/bundles/jaas/jaas-login-registration</developerConnection>
-        <url>https://dev.sourcesense.com/repos/dev/stone/trunk/bundles/jaas/jaas-login-registration</url>
+        <connection>scm:git:git://github.com/sourcesense/stone.git</connection>
+        <developerConnection>scm:git@github.com:sourcesense/stone.git</developerConnection>
+        <url>https://github.com/sourcesense/stone</url>
     </scm>
 
     <build>

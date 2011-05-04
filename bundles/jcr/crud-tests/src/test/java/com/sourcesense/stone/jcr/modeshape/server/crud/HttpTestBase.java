@@ -1,19 +1,18 @@
 /*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
+ *  Copyright 2011 Sourcesense
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+*/
 package com.sourcesense.stone.jcr.modeshape.server.crud;
 
 import java.io.IOException;
@@ -78,7 +77,7 @@ public class HttpTestBase extends TestCase {
     /** URLs stored here are deleted in tearDown */
     protected final List<String> urlsToDelete = new LinkedList<String>();
 
-    /** Need to execute javascript code 
+    /** Need to execute javascript code
     private final JavascriptEngine javascriptEngine = new JavascriptEngine(); */
 
     /** Class that creates a test node under the given parentPath, and
@@ -118,7 +117,7 @@ public class HttpTestBase extends TestCase {
     @Override
     protected void setUp() throws Exception {
         super.setUp();
-        
+
         MDC.put("testclass", getClass().getName());
         MDC.put("testcase", getName());
 
@@ -146,7 +145,7 @@ public class HttpTestBase extends TestCase {
     protected void tearDown() throws Exception {
         MDC.remove("testcase");
         MDC.remove("testclass");
-        
+
         super.tearDown();
 
         for(String url : urlsToDelete) {
@@ -404,7 +403,7 @@ public class HttpTestBase extends TestCase {
         assertJavascript(expectedOutput, jsonData, code, null);
     }
 
-    /** Evaluate given code using given jsonData as the "data" object 
+    /** Evaluate given code using given jsonData as the "data" object
     protected void assertJavascript(String expectedOutput, String jsonData, String code, String testInfo) throws IOException {
     	final String result = javascriptEngine.execute(code, jsonData);
         if(!result.equals(expectedOutput)) {
